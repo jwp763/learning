@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @application.title %>
+</p>
+
+<p>
+  <strong>Story:</strong>
+  <%= @application.story %>
+</p>
+
+<p>
+  <strong>Specialization:</strong>
+  <%= @application.specialization %>
+</p>
+
+<%= link_to 'Edit', edit_application_path(@application) %> |
+<%= link_to 'Back', applications_path %>
