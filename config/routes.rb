@@ -1,8 +1,16 @@
 Rails.application.routes.draw do
+
   resources :applications
   resources :videos
   resources :specializations
   resources :categories
+
+  get 'pages/home'
+
+  get 'pages/about'
+
+  get 'pages/faq'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
