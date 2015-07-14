@@ -1,3 +1,20 @@
 // Place all the styles related to the Videos controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+/*body:nth-child(1){
+    background-color: red;
+}
+
+body:nth-child(2){
+    background-color: blue;
+}*/
+
+.main {
+    background-color: green;
+    height:12em;
+}
+.menu {
+    background-color: blue;
+    height: 12em;
+}

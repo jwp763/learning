@@ -1,28 +1,45 @@
+<!DOCTYPE html>
+
+<html>
+  
+<head>
+  	<link type="text/css" rel="stylesheet" href="assets/stylesheets/videos.scss"/>
+</head>
+  
+<body>
+
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Title:</strong>
-  <%= @video.title %>
-</p>
+    <p>
+    <strong>Title:</strong>
+    <%= @video.title %>
+    </p>
 
-<p>
-  <strong>Link:</strong>
-  <%= @video.link %>
-</p>
+    <p>
+      <strong>Link:</strong>
+      <%= @video.link %>
+    </p>
 
-<p>
-  <strong>Description:</strong>
-  <%= @video.description %>
-</p>
+  <p>
+    <strong>Description:</strong>
+    <%= @video.description %>
+  </p>
 
-<p>
-  <strong>Specialization:</strong>
-  <%= @video.specialization.name %>
-</p>
+<<<<<<< HEAD
+  <p>
+    <strong>Specialization:</strong>
+    <%= @video.specialization %>
+  </p>
+
 
 <iframe width='560' height='315' src=<%=@video.link %> frameborder='0' allowfullscreen></iframe>
 
+<<<<<<< HEAD
 <p>
   <%= link_to 'Back to all videos', videos_path %> |
   <%= link_to "Back to #{@video.specialization.name} videos", specialization_videos_path(@video.specialization) %>
 </p>
+=======
+
+
+>>>>>>> a904257ef94350dce916d905d06c0286bd5f7c18
