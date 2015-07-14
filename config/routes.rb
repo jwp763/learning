@@ -2,7 +2,10 @@ Rails.application.routes.draw do
 
   resources :applications
   resources :videos
-  resources :specializations
+  resources :specializations do
+    resources :videos
+    resources :applications
+  end
   resources :categories
 
   get 'pages/home'
@@ -22,6 +25,9 @@ Rails.application.routes.draw do
   get 'applications' => 'application#index'
   get 'categories' => 'category#index'
   get 'specializations' => 'specialization#index'
+  
+
+  
   get 'videos' => 'videos#index'
   # Example of named route that can be invoked with purchase_url(id: product.id)
   #   get 'products/:id/purchase' => 'catalog#purchase', as: :purchase

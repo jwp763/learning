@@ -20,6 +20,9 @@
   <%= @video.specialization.name %>
 </p>
 
-<%= link_to 'Back', videos_path %>
-
 <iframe width='560' height='315' src=<%=@video.link %> frameborder='0' allowfullscreen></iframe>
+
+<p>
+  <%= link_to 'Back to all videos', videos_path %> |
+  <%= link_to "Back to #{@video.specialization.name} videos", specialization_videos_path(@video.specialization) %>
+</p>
