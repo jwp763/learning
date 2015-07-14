@@ -1,26 +1,40 @@
+<!DOCTYPE html>
+
+<html>
+  
+<head>
+  	<link type="text/css" rel="stylesheet" href="assets/stylesheets/videos.scss"/>
+</head>
+  
+<body>
+
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Title:</strong>
-  <%= @video.title %>
-</p>
+    <p>
+    <strong>Title:</strong>
+    <%= @video.title %>
+    </p>
 
-<p>
-  <strong>Link:</strong>
-  <%= @video.link %>
-</p>
+    <p>
+      <strong>Link:</strong>
+      <%= @video.link %>
+    </p>
 
-<p>
-  <strong>Description:</strong>
-  <%= @video.description %>
-</p>
+  <p>
+    <strong>Description:</strong>
+    <%= @video.description %>
+  </p>
 
-<p>
-  <strong>Specialization:</strong>
-  <%= @video.specialization %>
-</p>
+<<<<<<< HEAD
+  <p>
+    <strong>Specialization:</strong>
+    <%= @video.specialization %>
+  </p>
 
-<%= link_to 'Edit', edit_video_path(@video) %> |
+
 <%= link_to 'Back', videos_path %>
 
 <iframe width='560' height='315' src=<%=@video.link %> frameborder='0' allowfullscreen></iframe>
+
+
+
