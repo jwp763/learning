@@ -1,0 +1,36 @@
+<%# Customize this file to meet your needs and place in /yourtheme/snippets/collection. You will have to create those folders. %>
+<div class="flexslider">
+	<ul class="slides">
+		<% for r in @resources -%>
+		
+			<%# default setup: link image to location in gallery %>
+			<%# url, options = public_resource_url(r, @collection), {} -%>
+			 
+			<%# if url is the only thing in slate's description field for image properties, link entire image to that url %>
+			<% url, options = r.description, {} -%>
+			 
+			<%# if the description contains more then a url and has a div id of "url", do more fancy stuff. eg: <div id="url" style="display:none;">http://example.com</div> . 
+				# Falls back to image gallery if there is no URL in slate's description field 
+			%> 
+			<%# description = Hpricot(r.description) %>
+			<%# url = (description/"#url").inner_html %>
+			<%# if url.blank? %>
+				<%# url = public_resource_url(r, @collection) %>
+			<%# end %>
+			<%# options = {} %>
+			 
+			<%# set up snippet for editable region. size will default to original unless otherwise specified. %>
+			<li><%= link_to resource_image(r, snippet_params[:size] || 'orig'), url, options -%>
+ 
+				<%# Standard set up to print a caption via description field. Still needs default setup. %>
+				<!-- <div class="flex-caption">
+					<%#= content_tag('h2', r.name ) -%>
+					<%# unless r.description.blank? -%>
+			   	  		<%#= content_tag('p', r.description) -%>
+					<%# end -%>
+				</div> -->
+ 
+			</li>
+		<% end -%>
+	</ul>
+</div><!-- /.flexslider -->

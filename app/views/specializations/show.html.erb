@@ -15,8 +15,12 @@
   <%= @specialization.category.name %>
 </p>
 
-<% @applications.each do |application| %>
-  <p><%= application.title %></p>
-<% end %>
+<p>
+  <%= link_to 'Applications', applications_path %>
+</p>
 
-<%= link_to 'Back', specializations_path %>
+<p>
+  <%= link_to 'Videos', specialization_videos_path(@specialization.id) %>
+</p>
+
+<%= link_to 'Back to Specializations', specializations_path(@specialization.id) %>

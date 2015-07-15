@@ -4,7 +4,12 @@ class VideosController < ApplicationController
   # GET /videos
   # GET /videos.json
   def index
-    @videos = Video.all
+    if params[:specialization_id]
+      specialization = Specialization.find(params[:specialization_id])
+      @videos = specialization.videos
+    else
+      @videos = Video.all
+    end
   end
 
   # GET /videos/1
