@@ -29,17 +29,8 @@
     <strong>Specialization:</strong>
     <%= @video.specialization %>
   </p>
-  
-
-
-
-<%= link_to 'Edit', edit_video_path(@video) %>
-<%= link_to 'Back', videos_path %>
-
-
 
 <iframe width='560' height='315' src=<%=@video.link %> frameborder='0' allowfullscreen></iframe>
-
 
 <p>
   <%= link_to 'Back to all videos', videos_path %> |

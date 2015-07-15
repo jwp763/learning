@@ -10,7 +10,7 @@ class CategoriesController < ApplicationController
   # GET /categories/1
   # GET /categories/1.json
   def show
-    @specializations = @category.specializations
+    @specialization = @category.specializations(:id)
   end
 
   # GET /categories/new

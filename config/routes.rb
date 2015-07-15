@@ -6,7 +6,9 @@ Rails.application.routes.draw do
     resources :videos
     resources :applications
   end
-  resources :categories
+  resources :categories do
+    resources :specializations
+  end
 
   get 'pages/home'
 

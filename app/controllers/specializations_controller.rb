@@ -10,7 +10,6 @@ class SpecializationsController < ApplicationController
   # GET /specializations/1
   # GET /specializations/1.json
   def show
-    @applications = @specialization.applications
   end
 
   # GET /specializations/new
