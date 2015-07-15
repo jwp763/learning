@@ -9,12 +9,29 @@
 body:nth-child(2){
     background-color: blue;
 }*/
+.row {
+    position:relative;
+    top:40px;
+}
 
 .main {
     background-color: green;
-    height:12em;
+    height:50em;
 }
 .menu {
     background-color: blue;
-    height: 12em;
+    height: 50em;
+}
+#search {
+    width: 25em;
+}
+.jumbotron {
+    width: 71em;
+    height:30em;
+    position: relative;
+    top: 10px;
+}
+.item {
+    width: 1200px;
+    height: 315px;
 }
