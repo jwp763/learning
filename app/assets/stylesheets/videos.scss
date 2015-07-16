@@ -27,11 +27,27 @@ body:nth-child(2){
 }
 .jumbotron {
     width: 71em;
-    height:30em;
+    height:35em;
     position: relative;
     top: 10px;
 }
 .item {
-    width: 1200px;
-    height: 315px;
+    width: 570px;
+    height: 400px;
+    position: fixed;
+    margin-left: auto;
+    margin-right: auto;
 }
+.arrows {
+    opacity: 0.0;
+}
+.arrows:hover {
+    opacity: 0.5; /* makes navigation arrows over the videos transparent before scrolling over*/
+}
+.arrows2 {
+    opacity: 0.0;
+}
+#sidemenu {
+   padding:20px 0px 0px 0px;
+}
+
