@@ -15,21 +15,22 @@ body:nth-child(2){
 }
 
 .main {
-    background-color: green;
+    background-color: #686868;
     height:50em;
 }
 .menu {
-    background-color: blue;
+    background-color: #eae7e7;
     height: 50em;
 }
 #search {
     width: 25em;
 }
 .jumbotron {
+    background-color:#eae7e7;
     width: 71em;
-    height:35em;
+    height: 40em;
     position: relative;
-    top: 10px;
+    top: 50px;
 }
 .item {
     width: 570px;
@@ -47,7 +48,12 @@ body:nth-child(2){
 .arrows2 {
     opacity: 0.0;
 }
+#search {
+    padding:40px 0px 0px 0px;
+}
+
 #sidemenu {
-   padding:20px 0px 0px 0px;
+
+   padding:40px 0px 0px 0px;
 }
 
