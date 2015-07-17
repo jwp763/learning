@@ -2,11 +2,21 @@
 
 .header {
 background-color: #fe5607;
-height: 8em;
+height: 5em;
 }
 
 
 .navbar-header {
-    font-size: 45px;
+    text-decoration: none;
+    font-family: "palatino";
+    text-shadow: 1px 1px #fe5607;
+    line-height: 68px;
+    font-size: 55px;
     
+}
+
+.navbar-header:hover {
+    text-decoration:none;
+    color: #F00;
+    background-color: none;
 }
