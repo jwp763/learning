@@ -28,40 +28,40 @@ category6.save
 specialization1 = category1.build_specialization(name:"Environmental", description:"Learn here why it's important to keep those carbon emissions down (plus some other cool things about nature)!")
 specialization1.save
 
-specialization2 = category1.build_specialization(name:"Physics", description:"Physics: where crashes and explosions become science!")
+specialization2 = Specialization.new(name:"Physics", description:"Physics: where crashes and explosions become science!")
 specialization2.save
 
-specialization3 = category1.build_specialization(name:"Genetics", description:"From the color of your hair to your number of fingers and toes, almost everything about you is determined by genetic information!")
+specialization3 = Specialization.new(name:"Genetics", description:"From the color of your hair to your number of fingers and toes, almost everything about you is determined by genetic information!")
 specialization3.save
 
-specialization4 = category1.build_specialization(name:"Biology", description:"Animals, plants, and entire ecosystems fall under the study of biologists. Learn alongside them here!")
+specialization4 = Specialization.new(name:"Biology", description:"Animals, plants, and entire ecosystems fall under the study of biologists. Learn alongside them here!")
 specialization4.save
 
-specialization5 = category1.build_specialization(name:"Chemistry", description:"Have you ever wondered why your soda fizzes, fires burn, and fireworks explode? Chemistry has the answers!")
+specialization5 = Specialization.new(name:"Chemistry", description:"Have you ever wondered why your soda fizzes, fires burn, and fireworks explode? Chemistry has the answers!")
 specialization5.save
 
-specialization6 = category1.build_specialization(name:"Miscellaneous", description:"More cool stuff here!")
+specialization6 = Specialization.new(name:"Miscellaneous", description:"More cool stuff here!")
 specialization6.save
 
-specialization7 = category2.build_specialization(name:"Algebra", description:"nil")
+specialization7 = Specialization.new(name:"Algebra", description:"nil")
 specialization7.save
 
-specialization8 = category2.build_specialization(name:"Geometry", description:"nil")
+specialization8 = Specialization.new(name:"Geometry", description:"nil")
 specialization8.save
 
-specialization9 = category2.build_specialization(name:"Trigonometry", description:"nil")
+specialization9 = Specialization.new(name:"Trigonometry", description:"nil")
 specialization9.save
 
-specialization10 = category2.build_specialization(name:"Precalculus", description:"nil")
+specialization10 = Specialization.new(name:"Precalculus", description:"nil")
 specialization10.save
 
-specialization11 = category2.build_specialization(name:"Calculus", description:"nil")
+specialization11 = Specialization.new(name:"Calculus", description:"nil")
 specialization11.save
 
-specialization12 = category2.build_specialization(name:"Miscellaneous", description:"nil")
+specialization12 = Specialization.new(name:"Miscellaneous", description:"nil")
 specialization12.save
 
-specialization13 = category3.build_specialization(name:"Music", description:"nil")
+specialization13 = Specialization.new(name:"Music", description:"nil")
 specialization13.save
 
 specialization14 = category3.build_specialization(name:"Theater", description:"nil")
@@ -121,32 +121,32 @@ specialization31.save
 specialization32 = category6.build_specialization(name:"Miscellaneous", description:"nil")
 specialization32.save
 
-video1 = specialization1.build_video(title:"How Do Greenhouse Gases Actually Work?", description:"nil", link:"https://www.youtube.com/embed/sTvqIijqvTg", image_link:"https://img.youtube.com/vi/sTvqIijqvTg/0.jpg")
+video1 = Video.new(title:"How Do Greenhouse Gases Actually Work?", description:"nil", link:"https://www.youtube.com/embed/sTvqIijqvTg", image_link:"https://img.youtube.com/vi/sTvqIijqvTg/0.jpg")
 video1.save
 
-video2 = specialization1.build_video(title:"Is Climate Change Just A Lot Of Hot Air?", description:"nil", link:"https://www.youtube.com/embed/nEQghbA3pLM", image_link:"https://img.youtube.com/vi/nEQghbA3pLM/0.jpg")
+video2 = Video.new(title:"Is Climate Change Just A Lot Of Hot Air?", description:"nil", link:"https://www.youtube.com/embed/nEQghbA3pLM", image_link:"https://img.youtube.com/vi/nEQghbA3pLM/0.jpg")
 video2.save
 
-video3 = specialization1.build_video(title:"Which Came First - The Rain or the Rainforest?", description:"nil", link:"https://www.youtube.com/embed/Y3OWgb0Bv-A", image_link:"https://img.youtube.com/vi/Y3OWgb0Bv-A/0.jpg")
+video3 = Video.new(title:"Which Came First - The Rain or the Rainforest?", description:"nil", link:"https://www.youtube.com/embed/Y3OWgb0Bv-A", image_link:"https://img.youtube.com/vi/Y3OWgb0Bv-A/0.jpg")
 video3.save
 
-video4 = specialization1.build_video(title:"How do Trees Survive Winter?", description:"", link:"https://www.youtube.com/embed/d260CmZoxj8", image_link:"https://img.youtube.com/vi/d260CmZoxj8/0.jpg")
+video4 = Video.new(title:"How do Trees Survive Winter?", description:"", link:"https://www.youtube.com/embed/d260CmZoxj8", image_link:"https://img.youtube.com/vi/d260CmZoxj8/0.jpg")
 video4.save
 
-video5 = specialization1.build_video(title:"Why Does Earth Have Deserts?", description:"", link:"https://www.youtube.com/embed/T6Us1sPXBfA", image_link:"https://img.youtube.com/vi/T6Us1sPXBfA/0.jpg")
+video5 = Video.new(title:"Why Does Earth Have Deserts?", description:"", link:"https://www.youtube.com/embed/T6Us1sPXBfA", image_link:"https://img.youtube.com/vi/T6Us1sPXBfA/0.jpg")
 video5.save
 
-video6 = specialization1.build_video(title:"Our Atmosphere is Escaping!", description:"", link:"https://www.youtube.com/embed/e7ZqMTBwFVs", image_link:"https://img.youtube.com/vi/e7ZqMTBwFVs/0.jpg")
+video6 = Video.new(title:"Our Atmosphere is Escaping!", description:"", link:"https://www.youtube.com/embed/e7ZqMTBwFVs", image_link:"https://img.youtube.com/vi/e7ZqMTBwFVs/0.jpg")
 video6.save
 
-video7 = specialization1.build_video(title:"Fracking explained: opportunity or danger", description:"", link:"https://www.youtube.com/embed/Uti2niW2BRA", image_link:"https://img.youtube.com/vi/Uti2niW2BRA/0.jpg")
+video7 = Video.new(title:"Fracking explained: opportunity or danger", description:"", link:"https://www.youtube.com/embed/Uti2niW2BRA", image_link:"https://img.youtube.com/vi/Uti2niW2BRA/0.jpg")
 video7.save
 
-video8 = specialization1.build_video(title:"The Gulf Stream & Climate Change", description:"", link:"https://www.youtube.com/embed/UuGrBhK2c7U", image_link:"https://img.youtube.com/vi/UuGrBhK2c7U/0.jpg")
+video8 = Video.new(title:"The Gulf Stream & Climate Change", description:"", link:"https://www.youtube.com/embed/UuGrBhK2c7U", image_link:"https://img.youtube.com/vi/UuGrBhK2c7U/0.jpg")
 video8.save
 
-video8 = specialization2.build_video(title:"Minute Physics: What is Gravity?", description:"", link:"https://www.youtube.com/embed/p_o4aY7xkXg", image_link:"https://img.youtube.com/vi/p_o4aY7xkXg/0.jpg")
+video8 = Video.new(title:"Minute Physics: What is Gravity?", description:"", link:"https://www.youtube.com/embed/p_o4aY7xkXg", image_link:"https://img.youtube.com/vi/p_o4aY7xkXg/0.jpg")
 video8.save
 
-video9 = specialization2.build_video(title:"Minute Physics: What is Dark Matter?", description:"", link:"https://www.youtube.com/embed/Af0_vWDfJwQ", image_link:"https://img.youtube.com/vi/Af0_vWDfJwQ/0.jpg")
+video9 = Video.new(title:"Minute Physics: What is Dark Matter?", description:"", link:"https://www.youtube.com/embed/Af0_vWDfJwQ", image_link:"https://img.youtube.com/vi/Af0_vWDfJwQ/0.jpg")
 video9.save
