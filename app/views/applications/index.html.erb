@@ -15,7 +15,7 @@
   <tbody>
     <% @applications.each do |application| %>
       <tr>
-        <td><%= application.title %></td>
+        <td><%= link_to "#{application.title}", application %></td>
         <td><%= application.story %></td>
         <td><%= application.specialization.name %></td>
         <td><%= link_to 'Show', application %></td>
