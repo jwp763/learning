@@ -3,7 +3,6 @@ html{
 }
 
 .about {
-    
     border: 2px solid #C8D5B9;
     /*border-style: inset; */
     box-shadow: 0 0 10px .1px;
@@ -11,13 +10,21 @@ html{
 	-webkit-border-radius: 5px;
 	color: #000000;
     height: 35em;
-    width: 50%;
-    position: fixed;
-        left: 2em;
+    width: 100%;
+    position: relative;
+        left: 1em;
         top: 5.5em;
-        right: 4em;
-    padding: 2em;
+        right: 1em;
+    padding: 1em 4em 4em 4em;
     font-family: florence, serif;
     background-color:#C8D5B9;
     
+}
+
+h1 {
+    font-family: century gothic, sans-serif;
+    font-size: 2em;
+    text-align: center;
+    text-shadow: 1px 1px #fe5607;
+    line-height: 0.5px;
 }
