@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150717040903) do
+ActiveRecord::Schema.define(version: 20150717051809) do
 
   create_table "answers", force: :cascade do |t|
     t.integer  "question_id"
@@ -74,6 +74,7 @@ ActiveRecord::Schema.define(version: 20150717040903) do
     t.integer  "specialization_id"
     t.datetime "created_at",        null: false
     t.datetime "updated_at",        null: false
+    t.string   "image_link"
   end
 
   add_index "videos", ["specialization_id"], name: "index_videos_on_specialization_id"

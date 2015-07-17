@@ -26,6 +26,9 @@ Rails.application.routes.draw do
   root 'pages#home'
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
+  
+  get 'apps/:ordering', as: :ordered_apps, controller: :controller, action: :index
+  
   get 'applications' => 'application#index'
   get 'categories' => 'category#index'
   get 'specializations' => 'specialization#index'
