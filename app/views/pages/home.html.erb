@@ -4,6 +4,11 @@
 
 <!DOCTYPE html>
 <html>
+    
+    <head>
+        <%= stylesheet_link_tag 'custom', media: 'print, screen' %>
+        <!--<LINK href="custom.scss" rel="stylesheet" type="text/css"> -->
+    </head>
     <body>
         
         <!--<header id= "test1">
@@ -25,10 +30,11 @@
                             <h1>Featured Video</h1>
                             <p align="left">
                                 
-                                <video width="320" height="240" controls src="https://www.youtube.com/watch?v=3WMgNlU_vxQ">
+                                <!--<video width="320" height="240" controls src="https://www.youtube.com/watch?v=3WMgNlU_vxQ">
                                     <source src="movie.mp4" type="video/mp4">
                                     <source src="movie.ogg" type="video/ogg">
-                                    </video>
+                                    </video> -->
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/3WMgNlU_vxQ" frameborder="0" allowfullscreen></iframe>
                                 <a class="link" href="http://www.telegraph.co.uk/news/science/6546462/The-10-weirdest-physics-facts-from-relativity-to-quantum-physics.html">Click here to watch more!</a>
                             </p>
                         </div>
@@ -37,8 +43,10 @@
                     <div class="row test3">
                         <div class="col-md-7 quiz"> 
                             <h1>Daily Quiz</h1>
-                            <p align ="left">
+                            <p>
                                 Today's Theme - Physics Fun!
+                                Did you ever wonder if you’d weigh less on the Moon than here on Earth? Are you fascinated by velocity problems? Our goal here is that with a little bit of thought, you’ll have fun working through these physics predicaments. Don’t worry if you find these questions challenging! Like the rest of the quizzes on Bundle, this one increases in difficulty and encompass a variety of levels of material - being stumped is simply part of learning process!
+                                <img src="http://sd.keepcalm-o-matic.co.uk/i/keep-calm-and-love-physics-6.png"/ height="200em" width="170em">
                                 <a href="http://www.physics4kids.com/extras/quiz_motion_intro/index.html">Take the Quiz!</a>
                             </p>
                         </div>
