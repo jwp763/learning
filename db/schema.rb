@@ -11,7 +11,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150701205719) do
+ActiveRecord::Schema.define(version: 20150717001117) do
+
+  create_table "answers", force: :cascade do |t|
+    t.integer  "question_id"
+    t.string   "content"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+  end
 
   create_table "applications", force: :cascade do |t|
     t.string   "title"
@@ -30,6 +37,13 @@ ActiveRecord::Schema.define(version: 20150701205719) do
     t.datetime "updated_at",  null: false
   end
 
+  create_table "questions", force: :cascade do |t|
+    t.integer  "survey_id"
+    t.text     "content"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "specializations", force: :cascade do |t|
     t.string   "name"
     t.text     "description"
@@ -39,6 +53,12 @@ ActiveRecord::Schema.define(version: 20150701205719) do
   end
 
   add_index "specializations", ["category_id"], name: "index_specializations_on_category_id"
+
+  create_table "surveys", force: :cascade do |t|
+    t.string   "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "videos", force: :cascade do |t|
     t.string   "title"

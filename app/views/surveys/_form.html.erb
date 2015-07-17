@@ -1,0 +1,37 @@
+<head><link rel= "stylesheet" type="text/css"  href="surveys.scss"/>
+<!DOCTYPE html>
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <div class="container">
+<%= form_for(@survey) do |f| %>
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+  <%= f.fields_for :questions do |builder| %>
+    <p>
+      <%= builder.label :content, "Question" %><br />
+      <%= builder.text_area :content, :rows => 3 %><br />
+      <%= builder.check_box :_destroy %>
+      <%= builder.label :_destroy, "Remove Question" %>
+    </p>
+    <% f.fields_for :answers do |builder| %>
+      <p>
+        <%= builder.label :content, "Answer" %>
+        <%= builder.text_field :content %>
+        <%= builder.check_box :_destroy %>
+        <%= builder.label :_destroy, "Remove" %>
+      </p>
+  <% end %>
+  <p><%= f.submit "Submit" %></p>
+<% end %>
+
+
+<% end %>
+  </div>
+  </body>
+
+</html>
