@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @interview.name %>
+</p>
+
+<p>
+  <strong>Story:</strong>
+  <%= @interview.story %>
+</p>
+
+<%= link_to 'Edit', edit_interview_path(@interview) %> |
+<%= link_to 'Back to Spotlight', interviews_path %>
