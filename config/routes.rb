@@ -1,7 +1,8 @@
 Rails.application.routes.draw do
 
   resources :interviews
-  resources :applications
+  resources :applications 
+  
   resources :videos
   resources :specializations do
     resources :videos

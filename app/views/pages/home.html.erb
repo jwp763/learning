@@ -4,47 +4,58 @@
 
 <!DOCTYPE html>
 <html>
+    
+    <head>
+        <%= stylesheet_link_tag 'custom', media: 'print, screen' %>
+        <!--<LINK href="custom.scss" rel="stylesheet" type="text/css"> -->
+    </head>
     <body>
         
         <!--<header id= "test1">
         <div class="col-md-12"></div> 
         </header> -->
         
-        <div class="col-md-12 container">
+        <div class="col-md-12 col-sm-12 col-xs-12 container">
            
            <div class="row">
-                <div class = "col-md-9">
+                <div class = "col-md-9 col-sm-9 col-xs-9">
                     <div class="row">
-                        <div class="col-md-4 tales"> 
+                        <div class="col-md-4 col-md-4 col-xs-4 tales"> 
                             <h1>Spotlight</h1>
                             <p align="left">
                                 <a href="http://www.collegedata.com/cs/main/main_mag_tmpl.jhtml">Full Story</a>
                             </p>
                         </div>
-                        <div class="col-md-8 video"> 
+                        <div class="col-md-8 col-sm-8 col-xs-8 video"> 
                             <h1>Featured Video</h1>
                             <p align="left">
                                 
-                                <video width="320" height="240" controls src="https://www.youtube.com/watch?v=3WMgNlU_vxQ">
+                                <!--<video width="320" height="240" controls src="https://www.youtube.com/watch?v=3WMgNlU_vxQ">
                                     <source src="movie.mp4" type="video/mp4">
                                     <source src="movie.ogg" type="video/ogg">
-                                    </video>
+                                    </video> -->
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/3WMgNlU_vxQ" frameborder="0" allowfullscreen align="center"></iframe>
                                 <a class="link" href="http://www.telegraph.co.uk/news/science/6546462/The-10-weirdest-physics-facts-from-relativity-to-quantum-physics.html">Click here to watch more!</a>
                             </p>
                         </div>
                     </div>
 
                     <div class="row test3">
-                        <div class="col-md-7 quiz"> 
+                        <div class="col-md-7 col-sm-7 col-xs-7 quiz"> 
                             <h1>Daily Quiz</h1>
-                            <p align ="left">
+                            <p>
                                 Today's Theme - Physics Fun!
+                                Did you ever wonder if you’d weigh less on the Moon than here on Earth? Are you fascinated by velocity problems? Our goal here is that with a little bit of thought, you’ll have fun working through these physics predicaments. Don’t worry if you find these questions challenging! Like the rest of the quizzes on Bundle, this one increases in difficulty and encompass a variety of levels of material - being stumped is simply part of learning process!
+                                
                                 <a href="http://www.physics4kids.com/extras/quiz_motion_intro/index.html">Take the Quiz!</a>
                             </p>
+                            
                         </div>
-                        <div class="col-md-5 learn"> 
+                        <div class="col-md-5 col-sm-5 col-xs-5 learn"> 
                             <h1>Learn Something</h1>
-                            <p> To read more, click
+                            <p>  
+                             
+                                To read more, click
                                 <a href="http://www.telegraph.co.uk/news/science/6546462/The-10-weirdest-physics-facts-from-relativity-to-quantum-physics.html">here</a>.
                             </p>
                         </div>
