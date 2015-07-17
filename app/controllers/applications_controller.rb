@@ -5,7 +5,18 @@ class ApplicationsController < ApplicationController
   # GET /applications.json
   def index
     @applications = Application.all
+    if params[:ordering]
+      if params[:ordering] == "Recent"
+        @applications = Application.all.order(:created_at)
+      elsif params[:ordering] == "Archive"
+        @applications = Application.all.order(:title)
+      end
+    end
   end
+
+#ordered_apps_path("Recent")
+#ordered_apps_path("Archive")
+
 
   # GET /applications/1
   # GET /applications/1.json
