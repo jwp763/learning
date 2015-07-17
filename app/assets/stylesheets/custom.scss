@@ -24,7 +24,7 @@
 //}
 
 html {
-      background-color:#FFFFEA;
+      background-color:#686868;
     /*background: -webkit-linear-gradient(#FFFFEA, #FFA38F); /* For Safari 5.1 to 6.0 */
     /*background: -o-linear-gradient(#FFFFEA, #FFA38F); /* For Opera 11.1 to 12.0 */
    /* background: -moz-linear-gradient(#FFFFEA, #FFA38F); /* For Firefox 3.6 to 15 */
@@ -38,7 +38,9 @@ html {
     background-color: #8A2BE2;
 } */
 
-
+body {
+    padding-top: 0px;
+}
 .tales {
     /*div styling*/
     border: 2px solid #C8D5B9;
@@ -51,7 +53,7 @@ html {
         left: 1.5em;
         top: 0em; 
     padding: 1em;    
-    background-color:#C8D5B9;
+    background-color:#eae7e7;
     
     /*text styling*/
     
@@ -66,7 +68,7 @@ html {
 
 .video {
      /*div styling*/
-    border: 2px solid #C8D5B9;
+    border: 2px solid #eae7e7;
     border-style: inset;
     -moz-border-radius: 5px;
 	-webkit-border-radius: 5px;
@@ -86,7 +88,7 @@ html {
 
 .quiz {
      /*div styling*/
-    border: 2px solid #C8D5B9;
+    border: 2px solid #eae7e7;
     border-style: inset;
     -moz-border-radius: 5px;
 	-webkit-border-radius: 5px;
@@ -121,7 +123,7 @@ html {
          
     padding: 1em;     
     width: 35em;
-    background-color:#C8D5B9;
+    background-color:#eae7e7;
     
     /*text styling*/
     
@@ -129,7 +131,8 @@ html {
 
 .sidebar {
      /*div styling*/
-    border: 2px solid #000000;
+    border: 2px solid #eae7e7;
+    border-style: inset;
     height: 75em;
     display: inline-block;
     /*margin-top: -21px;
@@ -139,17 +142,18 @@ html {
     position: relative;
         top: 0.8em;
     padding: 1em;
-    background-color:#FFA38F;
+    background-color:#eae7e7;
     
     /*text styling*/
-    text-align: center;  
+    text-align: center; 
+    
 }
 
 h1 {
     font-family: century gothic, sans-serif;
     font-size: 2em;
     text-align: center;
-    text-shadow: 1px 1px #000000;
+    text-shadow: 1px 1px #fe5607;
 }
 
 .link {
@@ -159,7 +163,7 @@ h1 {
 }
 
 div p {
-    color: blue;
+    color: #fe5607;
     text-align: left;
     font-family: oldtown, sans-serif;
     font-size: 1.2em;
@@ -167,9 +171,15 @@ div p {
 }
 
 img {
+    position: absolute;
     border: solid 2px #000000;
-    float: right;
-    margin: 1em;
+    margin-left: 100px;
+    margin-bottom: 100px;
 }
 
-
+iframe {
+    margin-right:auto;
+    margin-left:auto;
+    display:block;
+    float: center;
+}

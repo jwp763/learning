@@ -1,5 +1,14 @@
 <div class = "col-md-3 sidebar">
-    <p>
+    <h1>
          Sidebar
+    </h1>
+    <p> MITES: The Experience of a Lifetime June 12, 2015. </p>
+    <p>
+        A day that will live in infamy. That’s the day that the four of us--Megan, Kyra, Akua, and McCoy traveled a collective total of almost 8,000 miles to meet at Simmons Hall on the MIT Campus in Cambridge, MA. Simmons Hall would become our home for 6 weeks as we worked our way through college level courses in Physics, Calculus, Humanities, and Life Sciences. We would learn more than we could have ever guessed--in and out of the classroom. It was truly the beginning of the summer of a lifetime.
+        
     </p>
+    <p> MITES (Minority Introduction To Engineering & Sciences) is run by the Office of Engineering Outreach Programs (OEOP) at MIT. It’s a completely free program that allows rising high school seniors from all over the country (and several students from outside the US) to spend the summer experiencing high level courses and gaining exposure to engineering and STEM fields. Each year has a 3-4% acceptance rate. But, that’s not really what matters.
+    </p>
+    <p>Click <%= link_to 'here', applications_path %> to read more.</p>
+
 </div>
