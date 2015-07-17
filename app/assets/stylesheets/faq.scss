@@ -3,35 +3,39 @@
 //     background-color: blue;
 // }
 .container1 {
-    background-color: blue;
+    background-color: #686868;
     height: 100%;
     padding-top: 00px;
     }
 body {
     padding-top:-30px;
-    height: 100%;
-    background-color: green;
+    height: 108px;
+    background-color: #686868;
+}
+hr {
+    border-color:#858585;
 }
 .div1 {
     width: 90em;
-    height: 93em;
-    padding: -30px 0px 40px 0px;
+    height: 90em;
+    padding: 0px 0px 40px 0px;
     left: 45px;
-    background-color: white; 
+    background-color: #eae7e7; 
     position:relative;
     border-style: solid;
     border-width: 3px;
-    border-color: #000000;
+    border-color: #eae7e7;
     border-radius:5px;
 }
 .answers {
     width: 84em;
     height: 65em;
-    padding: 0px 0px 0px 40px;
+    padding: 0px 0px 0px 45px;
       
 }
 h3 {
     text-align: center;
+    text-indent: 50px;
     
 }
 .bun {
