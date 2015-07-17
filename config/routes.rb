@@ -9,6 +9,7 @@ Rails.application.routes.draw do
   resources :categories do
     resources :specializations
   end
+  resources :surveys
 
   get 'pages/home'
 
@@ -27,7 +28,7 @@ Rails.application.routes.draw do
   get 'applications' => 'application#index'
   get 'categories' => 'category#index'
   get 'specializations' => 'specialization#index'
-  
+  get 'surveys' => 'surveys#index'
 
   
   get 'videos' => 'videos#index'
