@@ -16,6 +16,7 @@
       <ul class="nav navbar-nav">
         <li class="active"><%= link_to "About", pages_about_path %><span class="sr-only">(current)</span></a></li>
         <li><%= link_to "FAQ", pages_faq_path %></a></li>
+        <li><%= link_to "Videos", videos_path %></li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Topics <span class="caret"></span></a>
           <ul class="dropdown-menu">
@@ -24,7 +25,7 @@
               <li role="separator" class="divider"></li>
               <li><%= link_to "See all Categories", categories_path %> <a></a></li>
               <li role="separator" class="divider"></li>
-              <li><%= link_to "See all Sub-Categories", specializations_path %></li>
+              <li><%= link_to "See all Subjects", specializations_path %></li>
           </ul>
         </li>
       </ul>
@@ -41,9 +42,8 @@
           <ul class="dropdown-menu">
             <li><a href="#">Recent</a></li>
             <li><a href="#">Archives</a></li>
-            <li><a href="#">Something else here</a></li>
             <li role="separator" class="divider"></li>
-            <li><a href="#">Spotlight</a></li>
+            <li><%= link_to 'Spotlight', interviews_path %></li>
           </ul>
         </li>
       </ul>
